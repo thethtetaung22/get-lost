@@ -12,7 +12,8 @@ import {
   Kitty, 
   LogoText, 
   Rocket,
-  Skateboard
+  Skateboard,
+  SleepyBird
 } from '.';
 
 import { 
@@ -30,7 +31,8 @@ import {
   IslandLogo, 
   KittyLogo, 
   RocketLogo,
-  SkateboardLogo
+  SkateboardLogo,
+  SleepyBirdLogo
 } from './Elements';
 
 const Landing = () => {
@@ -50,6 +52,7 @@ const Landing = () => {
       <BagLogo src={Bag} />
       <SkateboardLogo src={Skateboard} />
       <GiftBoxLogo src={GiftBox} />
+      <SleepyBirdLogo src={SleepyBird} />
     </Container>
   )
 }

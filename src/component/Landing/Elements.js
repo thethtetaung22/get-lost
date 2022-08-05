@@ -272,6 +272,25 @@ export const KittyLogo = styled.img`
     animation-timing-function: ease-in-out;
 `;
 
+export const SleepyBirdLogo = styled.img`
+    position: absolute;
+    left: 58.5%;
+    top: 41%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 38;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    max-width: 6%;
+
+    animation-name: ${MovingAnimation('15px')};
+    animation-duration: ${AnimationDuration};
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+`;
+
 export const SkateboardLogo = styled.img`
     position: absolute;
     left: 64%;
