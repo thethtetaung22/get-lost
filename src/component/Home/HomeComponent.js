@@ -53,10 +53,10 @@ import {
     GiftBoxParallax
 } from './Elements';
 
-const Landing = () => {
+const HomeComponent = () => {
 
     return (
-        <Container>
+        <Container id='Home'>
             <ImageLogo src={LogoText} />
             <CloudLogo2 src={Cloud} />
             <CloudLogo3 src={Cloud} />
@@ -117,4 +117,4 @@ const Landing = () => {
     )
 }
 
-export default Landing;
+export default HomeComponent;

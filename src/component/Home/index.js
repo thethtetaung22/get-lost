@@ -14,7 +14,7 @@ import Chicken from '../../assets/images/chicken.png';
 import Skateboard from '../../assets/images/skateboard.png';
 import GiftBox from '../../assets/images/gift-box.png';
 import Alien from '../../assets/images/aliens.png';
-import Landing from './Landing';
+import HomeComponent from './HomeComponent';
 
 export {
     LogoText, 
@@ -33,5 +33,5 @@ export {
     GiftBox,
     Alien,
     Cloud6,
-    Landing
+    HomeComponent
 }

@@ -1,13 +1,14 @@
-import { Landing } from './component/Landing';
-import Overview from './component/Overview';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
 
 const App = () => {
-  return (
-    <div className="App">
-      <Landing />
-      <Overview />
-    </div>
-  );
+    return (
+        <Router>
+            <Switch>
+                <Route path='/' component={Home} exact />
+            </Switch>
+        </Router>
+    );
 }
 
 export default App;
