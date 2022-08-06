@@ -1,0 +1,73 @@
+.container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde3a0;
+    padding: 80px 0;
+}
+
+.video-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 1190px;
+    height: 490px;
+    min-height: auto;
+    min-width: auto;
+    margin-top: 87px;
+    margin-bottom: 60px;
+    padding-top: 53px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 15px;
+    border-color: #fff;
+    border-radius: 50px;
+    box-shadow: none;
+}
+
+.w-embed-youtubevideo {
+    width: 100%;
+    position: relative;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.youtube-4 {
+    width: 100%;
+    padding-top: 56.17021276595745%;
+    margin-top: -4.5%;
+    margin-bottom: 0px;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+
+.iframe-video {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    pointer-events: none; 
+}

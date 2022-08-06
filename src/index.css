@@ -12,3 +12,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Sofia Pro Soft";
+  src: local("Sofia Pro Soft"),
+   url("./fonts/SofiaProSoft/Sofia-Pro-Soft.ttf") format("truetype");
+  font-weight: bold;
+}

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import './fonts/SofiaProSoft/Sofia-Pro-Soft.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

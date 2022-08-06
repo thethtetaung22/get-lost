@@ -1,0 +1,49 @@
+.overview-text {
+    font-family: 'Sofia Pro Soft', sans-serif;
+    color: #373947;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5rem;
+    letter-spacing: 0.01px;
+}
+
+.overview-header-text {
+    max-width: 750px;
+    margin-bottom: 5%;
+    padding-top: 20px;
+    font-family: 'Sofia Pro Soft', sans-serif;
+    color: #373947;
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: 400;
+}
+
+.embeded-video-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 15px;
+    border-color: #fff;
+    border-radius: 50px;
+    box-shadow: none;
+}

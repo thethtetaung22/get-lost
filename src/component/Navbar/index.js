@@ -45,17 +45,17 @@ const Navbar = ({ toggle }) => {
                         </MobileIcon> */}
                         <NavMenu>
                             <NavItem>
-                                <NavLink to='Home' smooth duration={500} spy exact='true' offset={-80}>
+                                <NavLink to='Home' smooth="true" duration={500} spy={true} exact='true' offset={-80}>
                                     Home
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to='OurPlatforms' smooth spy duration={500} exact='true' offset={-80}>
+                                <NavLink to='OurPlatforms' smooth="true" spy={true} duration={500} exact='true' offset={-80}>
                                     Our Platforms
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to='WhatWeDo' smooth spy duration={500} exact='true' offset={-80}>
+                                <NavLink to='WhatWeDo' smooth="true" spy={true} duration={500} exact='true' offset={-80}>
                                     What We Do
                                 </NavLink>
                             </NavItem>
@@ -63,18 +63,18 @@ const Navbar = ({ toggle }) => {
                             <NavLogo src={Logo} />
 
                             <NavItem>
-                                <NavBtnLink to='/articles' smooth spy duration={500} exact='true' offset={-80}>
+                                <NavBtnLink to='/articles' smooth="true" spy={"true"} duration={500} exact='true' offset={-80}>
                                     Aritcles
                                 </NavBtnLink>
                             </NavItem>
 
                             <NavItem>
-                                <NavLink to='Testimonials' smooth duration={500} spy exact='true' offset={-80}>
+                                <NavLink to='Testimonials' smooth="true" duration={500} spy={true} exact='true' offset={-80}>
                                     Testimonials
                                 </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to='Contact-Us' smooth spy duration={500} exact='true' offset={-80}>
+                                <NavLink to='Contact-Us' smooth="true" spy={true} duration={500} exact='true' offset={-80}>
                                     Contact Us
                                 </NavLink>
                             </NavItem>
