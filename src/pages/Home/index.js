@@ -13,7 +13,9 @@ const Home = () => {
     <div>
         <HomeComponent />
         <Navbar />
-        <Program />
+        <div style={{height: '370vh'}}>
+          <Program />
+        </div>
         <OurPlatforms />
         <WhatWeDo />
         <Testimonials />

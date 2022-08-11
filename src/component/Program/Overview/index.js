@@ -2,10 +2,10 @@ import React from 'react'
 import { Container } from './Elements'
 import './Overview.css';
 
-const Overview = ({ scrollY }) => {
+const Overview = () => {
 
     return (
-        <Container scrollY={scrollY} offset={968}>
+        <Container>
             <p className='overview-text'>
                 Join the team’s shenanigans with our boss, Ryan Tan, 
                 <br />as we travel around the world filming anything and 

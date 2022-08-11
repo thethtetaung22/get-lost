@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Gallery from './Gallery';
+import HeroSection from './Gallery/heroSection';
 import Overview from './Overview';
 import './Program.css'
 
@@ -16,7 +17,7 @@ const Program = () => {
 
     return (
         <div className='container'>
-            <Overview scrollY={scrollY} />
+            <Overview />
             <Gallery scrollY={scrollY} />
         </div>
     )
