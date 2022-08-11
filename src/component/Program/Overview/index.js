@@ -5,7 +5,7 @@ import './Overview.css';
 const Overview = ({ scrollY }) => {
 
     return (
-        <Container scrollY={scrollY} startY={968}>
+        <Container scrollY={scrollY} offset={968}>
             <p className='overview-text'>
                 Join the team’s shenanigans with our boss, Ryan Tan, 
                 <br />as we travel around the world filming anything and 
