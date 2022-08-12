@@ -4,14 +4,16 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 import heroImage from '../../../assets/images/camera-for-zoom-out.png';
 import './Hero.css'
+import ElementsLayer from './ElementsLayer/ElementsLayer';
 
 export default function HeroSection({ isInView, offset = 1500 }) {
   // 2.
   const { scrollY } = useScroll();
+  const startY = 2500;
   // 3.
-  const scale = useTransform(scrollY, [1875, offset+1875], [1, 5]);
-  const opacity = useTransform(scrollY, [1875, offset+1875], [3, 0]);
-  const moveDown = useTransform(scrollY, [1875, offset+1875], [0, -50]);
+  const scale = useTransform(scrollY, [startY, offset+startY], [1, 5]);
+  const opacity = useTransform(scrollY, [startY, offset+startY], [3, 0]);
+  const moveDown = useTransform(scrollY, [startY, offset+startY], [0, -50]);
 
 
   useEffect(() => {
@@ -22,16 +24,18 @@ export default function HeroSection({ isInView, offset = 1500 }) {
     <>
       <div className={'imageContainer'} style={{display: isInView ? 'block' : 'none'}}>
         {/* 5. */}
-        <motion.img
-          src={heroImage}
+        <motion.div
           alt='Model'
+          className='motion-div'
           style={{
             opacity: opacity,
             scale: scale,
             y: moveDown,
             top:'100vh'
           }}
-        />
+        >         
+          <ElementsLayer /> 
+        </motion.div>
       </div>
     </>
   );
