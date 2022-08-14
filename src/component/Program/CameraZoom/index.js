@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import CameraImage from '../../../assets/images/camera-for-zoom-out.png';
+import CameraImage from '../../../assets/images/zoom-resources/camera-zoom.png';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const CameraZoom = ({ scrollYPosition, offset = 1500 }) => {

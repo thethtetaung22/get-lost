@@ -20,6 +20,130 @@
   max-width: 100%;
   min-height: 100%;
   max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.img-airplane {
+  top: 0%;
+  left: 35%;
+}
+
+.img-ballon1 {
+  top: 13%;
+  left: 35%;
+  z-index: 5;
+}
+
+.img-map {
+  top: 10;
+  bottom: 10;
+  left: 10;
+  right: 10;
+}
+
+.img-camera {
+  /* top: 40%;
+  left: 40%; */
+  z-index: 10;
+}
+
+.img-pen {
+  top: 70%;
+  left: 70%;
+}
+
+.img-list-board {
+  top: 72%;
+  left: 60%;
+}
+
+.img-compass {
+  top: 78%;
+  left: 40%;
+}
+
+.img-cloud-1 {
+  top: 4%;
+  left: 52%;
+  z-index: 5;
+}
+
+.img-cloud-2 {
+  top: 18%;
+  left: 24%;
+  z-index: 4;
+}
+
+.img-cloud-3 {
+  top: 12%;
+  left: 47%;
+  z-index: 5;
+}
+
+.img-cloud-4 {
+  top: 16%;
+  left: 63%;
+  z-index: 4;
+}
+
+.img-cloud-5 {
+  top: 30%;
+  left: 14%;
+  z-index: 5;
+}
+
+.img-ballon-2 {
+  top: 20%;
+  left: 65%;
+  z-index: 5;
+}
+
+.img-cloud-8 {
+  top: 50%;
+  left: 17%;
+  z-index: 5;
+}
+
+.img-cloud-9 {
+  top: 70%;
+  left: 32%;
+  z-index: 5;
+}
+
+.img-ship {
+  top: 36%;
+  left: 28%;
+  z-index: 3
+}
+
+.img-star-pin-red {
+  top: 38%;
+  left: 22%;
+  z-index: 5
+}
+
+.img-pizza {
+  top: 32%;
+  left: 25.5%;
+  z-index: 4
+}
+
+.img-mountain-cycle {
+  top: 68%;
+  left: 40%;
+  z-index: 4
+}
+
+.img-yellow-star-pin {
+  top: 43%;
+  left: 66%;
+  z-index: 4
 }
