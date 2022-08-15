@@ -1,0 +1,28 @@
+#OurPlatforms {
+    height: 100vh;
+    min-height: 100vhs;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+}
+
+.title {
+    font-family: 'Sofia pro soft', sans-serif;
+    color: #373947;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    min-width: 60%;
+    max-width: 80%;
+    flex-wrap: wrap;
+}

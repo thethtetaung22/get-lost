@@ -1,0 +1,122 @@
+#MeetTheTeam {
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 250px 30px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.header>.title {
+    font-family: 'Sofia pro soft', sans-serif;
+    color: #000;
+    font-size: 3em;
+    line-height: 60px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+}
+
+.header>.sub {
+    font-family: 'Sofia pro soft', sans-serif;
+    color: #8e8e8e;
+    font-size: 0.8em;
+    line-height: 0.7rem;
+    text-align: center;
+}
+
+.section1 {
+    display: flex;
+    width: auto;
+    height: 350px;
+}
+
+.section1> .team-container > img {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: auto;
+    height: 300px;
+    min-height: auto;
+    margin-bottom: 24px;
+    border-radius: 300px 0px 300px 300px;
+    background-color: #f9ded5;
+    margin: 10px 20px;
+}
+
+.section2 {
+    display: flex;
+    width: auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.s2-img-container > img {
+    display: block;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
+}
+
+.team-name {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-family: 'Sofia pro soft', sans-serif;
+    color: #000;
+    font-size: 1em;
+    line-height: 0.5rem;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.team-position {
+    font-family: 'Sofia pro soft', sans-serif;
+    color: #8e8e8e;
+    font-size: 0.8em;
+    line-height: 0.7rem;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.team-container > .s2-img-container {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 130px;
+    height: 300px;
+    min-height: 150px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 15px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 300px 0px 300px 300px;
+    background-color: #ddd5cf;
+}
