@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     background-color: #ececec;
+    z-index: 10;
 }
 
 .title {
@@ -22,7 +23,29 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    min-width: 60%;
-    max-width: 80%;
+    width: 100%;
+    max-width: 1000px;
     flex-wrap: wrap;
 }
+
+.shake {
+    padding: 0 20px;
+}
+
+.shake:hover, :focus {
+    animation: bellshake .23s linear 5;
+    cursor: pointer;
+}
+
+.shake:hover::before {
+    background-color: red;
+}
+
+@keyframes bellshake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+  
