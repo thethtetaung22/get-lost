@@ -19,13 +19,13 @@ const MeetTheTeam = () => {
             </div>
             <div className='section1'>
                 <div className='team-container'>
-                    <img src={Ryan} />
+                    <img alt="team img" src={Ryan} />
                     <span className='team-name'>Ryan</span>
                     <span className='team-position'>Director | Founder</span>
                 </div>
 
                 <div className='team-container'>
-                    <img src={Isabelle} />
+                    <img alt="team img" src={Isabelle} />
                     <span className='team-name'>Isabelle</span>
                     <span className='team-position'>Social Media Manager</span>
                 </div>
@@ -33,7 +33,7 @@ const MeetTheTeam = () => {
             <div className='section2'>
                 <div className='team-container'>
                     <div className='s2-img-container'>
-                        <img src={YSKE} />
+                        <img alt="team img" src={YSKE} />
                     </div>
                     <span className='team-name'>YSKE</span>
                     <span className='team-position'>Producer</span>
@@ -41,7 +41,7 @@ const MeetTheTeam = () => {
 
                 <div className='team-container'>
                     <div className='s2-img-container'>
-                        <img src={Bryant} />
+                        <img alt="team img" src={Bryant} />
                     </div>
                     <span className='team-name'>Bryant</span>
                     <span className='team-position'>Production Director Cinematographer</span>
@@ -49,7 +49,7 @@ const MeetTheTeam = () => {
 
                 <div className='team-container'>
                     <div className='s2-img-container'>
-                        <img src={Avery} />
+                        <img alt="team img" src={Avery} />
                     </div>
                     <span className='team-name'>Avery</span>
                     <span className='team-position'>Production Lead</span>
@@ -57,7 +57,7 @@ const MeetTheTeam = () => {
 
                 <div className='team-container'>
                     <div className='s2-img-container'>
-                        <img src={Titus} />
+                        <img alt="team img" src={Titus} />
                     </div>
                     <span className='team-name'>Titus</span>
                     <span className='team-position'>Production Lead</span>
@@ -65,7 +65,7 @@ const MeetTheTeam = () => {
 
                 <div className='team-container'>
                     <div className='s2-img-container'>
-                        <img src={Krystal} />
+                        <img alt="team img" src={Krystal} />
                     </div>
                     <span className='team-name'>Krystal</span>
                     <span className='team-position'>Graphic Designer</span>
@@ -73,7 +73,7 @@ const MeetTheTeam = () => {
 
                 <div className='team-container'>
                     <div className='s2-img-container'>
-                        <img src={Lutfi} />
+                        <img alt="team img" src={Lutfi} />
                     </div>
                     <span className='team-name'>Lutfi</span>
                     <span className='team-position'>Illustrator</span>
@@ -81,7 +81,7 @@ const MeetTheTeam = () => {
 
                 <div className='team-container'>
                     <div className='s2-img-container'>
-                        <img src={XsinJoo} />
+                        <img alt="team img" src={XsinJoo} />
                     </div>
                     <span className='team-name'>Xsin Joo</span>
                     <span className='team-position'>Crew, Compositor</span>

@@ -1,5 +1,6 @@
 #WhatWeDo {
-    height: 110vh;
+    height: auto;
+    min-height: 110vh;
     background-color: #fde3a0;
     color: black;
     display: flex;
@@ -13,6 +14,7 @@
     flex-direction: column;
     padding-left: 50px;
     flex: 1;
+    min-width: 700px;
 }
 
 .section {

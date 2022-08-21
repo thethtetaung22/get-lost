@@ -95,7 +95,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.section2 > .team-container {
+    max-width: 150px;
+    padding: 20px;
 }
 
 .team-container > .s2-img-container {
@@ -105,7 +109,7 @@
     display: -ms-flexbox;
     display: flex;
     overflow: hidden;
-    width: 130px;
+    max-width: 130px;
     height: 300px;
     min-height: 150px;
     -webkit-box-pack: center;
@@ -119,4 +123,8 @@
     align-items: center;
     border-radius: 300px 0px 300px 300px;
     background-color: #ddd5cf;
+}
+
+.s2-img-container > img {
+    width: 100%;
 }
