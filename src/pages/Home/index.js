@@ -13,7 +13,7 @@ const Home = () => {
     <div>
         <HomeComponent />
         <Navbar />
-        <div style={{height: '430vh'}}>
+        <div style={{ height: '430vh', zIndex: 9 }}>
           <Program />
         </div>
         <OurPlatforms />

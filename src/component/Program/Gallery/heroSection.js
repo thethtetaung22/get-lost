@@ -44,7 +44,7 @@ export default function HeroSection({ isInView, offset = 1500 }) {
     const yellowPinMotion = useTransform(scrollY, [startY, offset + startY], [0, 100]);
 
     return (
-        <div className={'imageContainer'} style={{ display: isInView ? 'block' : 'none' }}>
+        <div className={'imageContainer'} style={{ display: isInView ? 'block' : 'none', zIndex: scrollY > 5000 ? 0 : 9 }}>
             <motion.div
                 alt='Model'
                 className='motion-div'

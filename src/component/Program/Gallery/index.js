@@ -4,13 +4,15 @@ import HeroSection from './heroSection';
 
 const Gallery = ({ scrollY }) => {
 
-    useEffect(() => {
-        console.log(scrollY)
-    }, [scrollY]);
-
     return (
-        <div className={'container'} style={{top: scrollY > 940 && scrollY < 4030 ? '0px': '330vh', position: scrollY > 940 && scrollY < 4030 ? 'fixed': 'relative'}}>
-            <HeroSection isInView={scrollY > 940}/>
+        <div 
+            className={'container'} 
+            style={{
+                top: scrollY > 940 && scrollY < 4030 ? '0px': '330vh', 
+                position: scrollY > 940 && scrollY < 4030 ? 'fixed': 'relative',
+                zIndex: scrollY > 940 && scrollY < 4030 ? '10': '1'
+            }}>
+            <HeroSection isInView={scrollY > 940} />
             <div className='inside-container'>
                 <div className='video-wrapper'>
                     <div className='youtube-4 w-embed-youtubevideo'>

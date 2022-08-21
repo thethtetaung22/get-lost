@@ -1,16 +1,33 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './WhatWeDo.css';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Joker from '../../assets/images/WhatWeDo/joker.png'
 import MeetTheTeam from './MeetTheTeam';
 
-const WhatWeDo = () => {
-    
+const Item = ({data}) => {
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["end end", "start start"]
+    });
 
+    useEffect(() => {
+        console.log('scrollyprogress:', scrollYProgress);
+    }, [scrollYProgress]);
 
+    return (
+        <div className='section' ref={ref}>
+            <motion.h1
+                className='title'
+            >
+                <b>{data.title}</b>
+            </motion.h1>
+            <motion.p className='description'>{data.description}</motion.p>
+        </div>
+    )
+}
 
-
-
+const WhatWeDo = ({ offset = 1500 }) => {
 
     const data = [
         {
@@ -30,25 +47,29 @@ const WhatWeDo = () => {
             description: `We ARE the community and we want to connect the brands we work with, with OUR community! We believe the key is to value-add to our community is by understanding the communities' needs and aspirations, and curates content that resonates with them.`
         }
     ];
+    const startY = 5000;
+
+
+    const { scrollY } = useScroll();
+    const opacity = useTransform(scrollY, [startY, offset + startY], [3, 0]);
+    const moveDown = useTransform(scrollY, [startY, offset + startY], [0, 100]);
+
+    useEffect(() => {
+        console.log('Scroll:', scrollY)
+    }, [useScroll]);
 
     return (
-        <>
+        <div style={{ display: 'flex', flexDirection: 'column', zIndex: 100 }}>
             <div id='WhatWeDo'>
-                <motion.img src={Joker} width={'500px'}/>
-                <motion.section className='motion-section'>
+                <motion.img src={Joker} width={'500px'} />
+                <section className='motion-section'>
                     {
-                        data.map(d => (
-                            <div className='section'>
-                                <h1 className='title'><b>{d.title}</b></h1>
-                                <p className='description'>{d.description}</p>
-                                <div className='divider'></div>
-                            </div>
-                        ))
+                        data.map(d => (<Item data={d} />))
                     }
-                </motion.section>
+                </section>
             </div>
             <MeetTheTeam />
-        </>
+        </div>
     )
 }
 

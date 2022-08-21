@@ -1,12 +1,12 @@
 #WhatWeDo {
-    height: auto;
-    min-height: 110vh;
-    background-color: #fde3a0;
-    color: black;
+    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    background-color: #fde3a0;
+    z-index: 100;
+    padding: 0 100px;
 }
 
 .motion-section {
