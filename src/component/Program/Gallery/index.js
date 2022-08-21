@@ -9,8 +9,7 @@ const Gallery = ({ scrollY }) => {
             className={'container'} 
             style={{
                 top: scrollY > 940 && scrollY < 4030 ? '0px': '330vh', 
-                position: scrollY > 940 && scrollY < 4030 ? 'fixed': 'relative',
-                zIndex: scrollY > 940 && scrollY < 4030 ? '10': '1'
+                position: scrollY > 940 && scrollY < 4030 ? 'fixed': 'relative'
             }}>
             <HeroSection isInView={scrollY > 940} />
             <div className='inside-container'>
