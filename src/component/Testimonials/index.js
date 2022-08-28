@@ -39,7 +39,7 @@ const Testimonials = () => {
     return (
         <div id='Testimonials' className='tms-container'>
             <div className='tms-contents'>
-                {
+                {/* {
                     index === 1 && data1.map(d => (
                         <div className='tms-content'>
                             <img src={QuoteImg} width={'30px'}/>
@@ -65,7 +65,7 @@ const Testimonials = () => {
                             <h1 className='tms-client'>{d.client}</h1>
                         </div>
                     ))
-                }
+                } */}
             </div>
         </div>
     )

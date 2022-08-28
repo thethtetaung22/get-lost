@@ -1,33 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import './WhatWeDo.css';
-import { motion, useScroll, useTransform } from 'framer-motion';
 import Joker from '../../assets/images/WhatWeDo/joker.png'
 import MeetTheTeam from './MeetTheTeam';
+import { WWDTitle } from './Elements';
 
-const Item = ({data}) => {
-    const ref = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["end end", "start start"]
-    });
 
-    useEffect(() => {
-        console.log('scrollyprogress:', scrollYProgress);
-    }, [scrollYProgress]);
-
-    return (
-        <div className='section' ref={ref}>
-            <motion.h1
-                className='title'
-            >
-                <b>{data.title}</b>
-            </motion.h1>
-            <motion.p className='description'>{data.description}</motion.p>
-        </div>
-    )
-}
-
-const WhatWeDo = ({ offset = 1500 }) => {
+const WhatWeDo = ({ scrollY }) => {
 
     const data = [
         {
@@ -36,25 +14,54 @@ const WhatWeDo = ({ offset = 1500 }) => {
         },
         {
             title: 'Cinematics Video Production',
-            description: 'Having produced multiple videos since 2012, our team of passionate cinematographers and video editors strives to bring quality and impressive productions to the industry by incorporating the latest and most innovative trends into our production.'
+            description: 'Having produced multiple videos since 2012, our team of passionate cinematographers and video editors strives to bring quality and impressive productions to the industry by incorporating the latest and most innovative trends into our production.',
+            start: 5600
         },
         {
             title: 'Advertising and Publicity',
-            description: 'We Produce, We Film and We Distribute. Our content will be distributed to the relevant platforms in our ecosystem :D'
+            description: 'We Produce, We Film and We Distribute. Our content will be distributed to the relevant platforms in our ecosystem :D',
+            start: 5800
         },
         {
             title: 'Community Engagement',
-            description: `We ARE the community and we want to connect the brands we work with, with OUR community! We believe the key is to value-add to our community is by understanding the communities' needs and aspirations, and curates content that resonates with them.`
+            description: `We ARE the community and we want to connect the brands we work with, with OUR community! We believe the key is to value-add to our community is by understanding the communities' needs and aspirations, and curates content that resonates with them.`,
+            start: 6031
         }
     ];
-    
+
     return (
         <div style={{ display: 'flex', flexDirection: 'column', zIndex: 100 }}>
             <div id='WhatWeDo'>
-                <img src={Joker} alt="joker" width={'500px'} className={'joker-img'}/>
+                <img src={Joker} alt="joker" width={'650px'} className={'joker-img'} />
                 <section className='motion-section'>
                     {
-                        data.map(d => (<Item data={d} />))
+                        data.map((d, i) => (
+                            <div className='section'>
+                                <WWDTitle className='title'>
+                                    <b>{d.title}</b>
+                                </WWDTitle>
+                                <p className='description'>
+                                    {d.description}
+                                </p>
+                                {
+                                    i < data?.length - 1 &&
+                                    <div style={{
+                                        width: '100%',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        alignItems: 'center'
+                                    }}>
+                                        <div style={{
+                                            width: '100%',
+                                            maxWidth: '80%',
+                                            height: '2px',
+                                            background: '#d26066'
+                                        }}>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        ))
                     }
                 </section>
             </div>

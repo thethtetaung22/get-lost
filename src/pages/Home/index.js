@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ContactUs from '../../component/ContactUs';
 import { HomeComponent } from '../../component/Home';
 import Navbar from '../../component/Navbar';
@@ -9,15 +9,29 @@ import WhatWeDo from '../../component/WhatWeDo';
 
 const Home = () => {
 
+  const [scrollY, setScrollY] = useState(0);
+
+    const handleScroll = () => setScrollY(window.pageYOffset);
+
+    useEffect(()=> {
+        console.log('Home:',scrollY);
+    }, [scrollY]);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
   return (
     <div>
         <HomeComponent />
         <Navbar />
         <div style={{ height: '430vh', zIndex: 9 }}>
-          <Program />
+          <Program scrollY={scrollY} />
         </div>
         <OurPlatforms />
-        <WhatWeDo />
+        <WhatWeDo scrollY={scrollY} />
         <Testimonials />
         <ContactUs />
     </div>

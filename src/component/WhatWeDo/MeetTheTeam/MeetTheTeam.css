@@ -34,44 +34,35 @@
     text-align: center;
 }
 
-.section1 {
-    display: flex;
-    width: auto;
-    height: 350px;
-}
-
-.section1> .team-container > img {
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    width: auto;
-    height: 300px;
-    min-height: auto;
-    margin-bottom: 24px;
-    border-radius: 300px 0px 300px 300px;
-    background-color: #f9ded5;
-    margin: 10px 20px;
-}
-
-.section2 {
-    display: flex;
-    width: auto;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.s2-img-container > img {
-    display: block;
-    overflow: visible;
+.img1 {
     width: 100%;
     height: 100%;
-    max-width: 100%;
+    position: relative;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: 50% 50%;
     object-position: 50% 50%;
 }
+
+.section1 {
+    display: flex;
+    width: auto;
+}
+
+.team {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: auto;
+    align-items: center;
+}
+
+.section2 {
+    display: flex;
+    margin-top: 60px;
+}
+
 
 .team-name {
     margin-top: 0px;
@@ -85,47 +76,11 @@
 }
 
 .team-position {
+    position: relative;
     font-family: 'Sofia pro soft', sans-serif;
     color: #8e8e8e;
     font-size: 0.8em;
     line-height: 0.7rem;
     text-align: center;
-}
-
-.team-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section2 > .team-container {
-    max-width: 150px;
-    padding: 20px;
-}
-
-.team-container > .s2-img-container {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    max-width: 130px;
-    height: 300px;
-    min-height: 150px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-right: 15px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-radius: 300px 0px 300px 300px;
-    background-color: #ddd5cf;
-}
-
-.s2-img-container > img {
-    width: 100%;
+    width: 130px;
 }

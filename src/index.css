@@ -19,3 +19,11 @@ code {
    url("./fonts/SofiaProSoft/Sofia-Pro-Soft.ttf") format("truetype");
   font-weight: bold;
 }
+
+
+@font-face {
+  font-family: "Sofia Pro Soft Bold";
+  src: local("Sofia Pro Soft Bold"),
+   url("./fonts/SofiaProSoft/Sofia-Pro-Soft-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
