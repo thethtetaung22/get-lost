@@ -47,21 +47,11 @@ const WhatWeDo = ({ offset = 1500 }) => {
             description: `We ARE the community and we want to connect the brands we work with, with OUR community! We believe the key is to value-add to our community is by understanding the communities' needs and aspirations, and curates content that resonates with them.`
         }
     ];
-    const startY = 5000;
-
-
-    const { scrollY } = useScroll();
-    const opacity = useTransform(scrollY, [startY, offset + startY], [3, 0]);
-    const moveDown = useTransform(scrollY, [startY, offset + startY], [0, 100]);
-
-    useEffect(() => {
-        console.log('Scroll:', scrollY)
-    }, [useScroll]);
-
+    
     return (
         <div style={{ display: 'flex', flexDirection: 'column', zIndex: 100 }}>
             <div id='WhatWeDo'>
-                <motion.img src={Joker} width={'500px'} />
+                <img src={Joker} alt="joker" width={'500px'} className={'joker-img'}/>
                 <section className='motion-section'>
                     {
                         data.map(d => (<Item data={d} />))

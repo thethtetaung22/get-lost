@@ -47,3 +47,29 @@
     margin-bottom: 25px;
     background-color: #d26066;
 }
+
+.joker-img:hover, :focus {
+    animation: wiggle 1s linear 1;
+    cursor: pointer;
+}
+
+@keyframes wiggle{
+    0%{
+        transform:scale(1, 1);
+    }
+    40%{
+        transform:scale(1.4, 0.6)
+    }
+    52%{
+        transform:scale(0.9, 1);
+    }
+    68%{
+        transform:scale(1.1, 1);
+    }
+    80%{
+        transform:scale(0.9, 1);
+    }
+    100%{
+        transform:scale(1, 1);
+    }
+}
