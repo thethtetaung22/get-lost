@@ -11,8 +11,7 @@ const Item = ({ data: { title, description, startY }, showDivider }) => {
     const titleY = useTransform(scrollY, [startY, offset + startY], [500, 0]);
     const descY = useTransform(scrollY, [descStartY, offset + descStartY], [500, 0]);
     const opacity = useTransform(scrollY, [startY, offset + startY], [-10, 1]);
-    const width = useTransform(scrollY, [descStartY, offset + descStartY], [0, 800]);
-
+    const width = useTransform(scrollY, [startY, descStartY], [0, 800]);
 
     return (
         <>
