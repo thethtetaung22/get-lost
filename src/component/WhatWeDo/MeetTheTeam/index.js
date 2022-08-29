@@ -10,8 +10,11 @@ import Titus from '../../../assets/images/WhatWeDo/team/titus.jpeg';
 import XsinJoo from '../../../assets/images/WhatWeDo/team/xsin_joo.jpeg';
 import YSKE from '../../../assets/images/WhatWeDo/team/yske.jpeg';
 import { DisplayOver, Hover, OverText, TeamImg1 } from './Elements';
+import { useScroll, useTransform } from 'framer-motion';
 
 const MeetTheTeam = () => {
+    const { scrollY } = useScroll();
+
     const team1 = [
         {
             name: 'Ryan',
@@ -89,6 +92,7 @@ const MeetTheTeam = () => {
             desc: `She is somehow taller than 90% of the team… actually she might be the tallest. She also has scary black nail extensions.`
         }
     ];
+    
     return (
         <div id='MeetTheTeam'>
             <div className='header'>

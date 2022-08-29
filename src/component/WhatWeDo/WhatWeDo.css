@@ -20,7 +20,15 @@
     z-index: 100;
 }
 
-.section > .description {
+.title {
+    font-family: 'Sofia Pro Soft Bold';
+    color: #373947;
+    font-size: 1.4em;
+    line-height: 42px;
+    will-change: transform;
+}
+
+.description {
     font-family: 'Sofia Pro Soft', sans-serif;
     color: #373947;
     font-size: 1em;
