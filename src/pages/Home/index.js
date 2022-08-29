@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ContactUs from '../../component/ContactUs';
+import Footer from '../../component/Footer';
 import { HomeComponent } from '../../component/Home';
 import Navbar from '../../component/Navbar';
 import OurPlatforms from '../../component/OurPlatforms';
@@ -34,6 +35,7 @@ const Home = () => {
         <WhatWeDo scrollY={scrollY} />
         <Testimonials />
         <ContactUs />
+        <Footer />
     </div>
   )
 }

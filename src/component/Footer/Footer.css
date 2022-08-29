@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #f2e5d9;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.footer-body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.copyright-text {
+    font-family: 'Sofia pro soft', sans-serif;
+    color: #ad3c42;
+    font-size: 0.76em;
+    line-height: 16px;
+    font-weight: 300;
+    padding-left: 50px;
+}
+
+.shake {
+    padding: 0 20px;
+    z-index: 200;
+}
+
+.shake:hover, :focus {
+    animation: bellshake .23s linear 5;
+    cursor: pointer;
+}
+
+.shake:hover::before {
+    background-color: red;
+}
+
+@keyframes bellshake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+  

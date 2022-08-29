@@ -56,28 +56,40 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 55px;
+    display: flex;
+    align-items: center;
 `;
 
 export const NavLink = styled(LinkS)`
-    color: #ad3d42;
-    display: flex;
-    align-items: center;
+    padding: 12px 24px;
+    border-radius: 50px;
+    background-color: transparent;
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    font-family: 'Sofia pro soft', sans-serif;
+    color: #ad3c42;
+    font-size: 0.9em;
+    line-height: 0.3em;
+    font-weight: 500;
+    letter-spacing: -0.01em;
     text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
+    white-space: nowrap;
     cursor: pointer;
-
-    &.active {
-        border-bottom: 3px solid #ad3d42;
-    }
 `;
 
 export const NavBtnLink = styled(LinkR)`
-    color: #ad3d42;
-    display: flex;
-    align-items: center;
+    padding: 12px 24px;
+    border-radius: 50px;
+    background-color: transparent;
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    font-family: 'Sofia pro soft', sans-serif;
+    color: #ad3c42;
+    font-size: 0.9em;
+    line-height: 0.3em;
+    font-weight: 500;
+    letter-spacing: -0.01em;
     text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
+    white-space: nowrap;
     cursor: pointer;
 `

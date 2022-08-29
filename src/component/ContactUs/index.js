@@ -55,14 +55,14 @@ const Item = ({ item, position, className, startY, endY, startOpacity, endOpacit
 
 const ContactUs = () => {
     const { scrollY } = useScroll();
-    const offset = 1000;
+    const offset = 1000, startPosition = 8200;
 
-    const systemUnitPosition = 8160;
+    const systemUnitPosition = startPosition + 150;
     const systemUnitY = useTransform(scrollY, [systemUnitPosition, offset + systemUnitPosition], [-500, 0]);
     const systemUnitX = useTransform(scrollY, [systemUnitPosition, offset + systemUnitPosition], [500, 0]);
     const systemUnitOpacity = useTransform(scrollY, [systemUnitPosition, offset + systemUnitPosition], [-20, 1]);
 
-    const basePosition = 8000;
+    const basePosition = startPosition - 20;
     const baseY = useTransform(scrollY, [basePosition, offset + basePosition], [0, 10]);
     const baseOpacity = useTransform(scrollY, [basePosition, offset + basePosition], [-10, 1]);
 
@@ -80,19 +80,19 @@ const ContactUs = () => {
                     width={'100%'}
                     height={'auto'}/>
 
-                <Item item={Desk} position={8010} />
-                <Item item={DeskShadow} position={8010} zIndex={8} startOpacity={-40} endOpacity={0.3} className='desk-shadow' />
-                <Item item={Monitor} position={8020} />
-                <Item item={ColorMonitor} position={8040} />
-                <Item item={Monitor2} position={8050} />
-                <Item item={MousePad} position={8060} />
-                <Item item={MousePad2} position={8075} />
-                <Item item={Notebook} position={8080} />
-                <Item item={KeyboardBlue} position={8090} />
-                <Item item={Mouse} position={8100} />
-                <Item item={PhoneStand} position={8105} />
-                <Item item={KeyboardPurple} position={8110} />
-                <Item item={MouseWhite} position={8115} />
+                <Item item={Desk} position={startPosition} />
+                <Item item={DeskShadow} position={startPosition} zIndex={8} startOpacity={-40} endOpacity={0.3} className='desk-shadow' />
+                <Item item={Monitor} position={startPosition+10} />
+                <Item item={ColorMonitor} position={startPosition+20} />
+                <Item item={Monitor2} position={startPosition+40} />
+                <Item item={MousePad} position={startPosition+50} />
+                <Item item={MousePad2} position={startPosition + 65} />
+                <Item item={Notebook} position={startPosition + 70} />
+                <Item item={KeyboardBlue} position={startPosition + 80} />
+                <Item item={Mouse} position={startPosition + 90} />
+                <Item item={PhoneStand} position={startPosition + 95} />
+                <Item item={KeyboardPurple} position={startPosition + 100} />
+                <Item item={MouseWhite} position={startPosition + 105} />
                 <motion.img src={SystemUnit}
                     className={'item'}
                     style={{
@@ -118,19 +118,19 @@ const ContactUs = () => {
                     width={'100%'}
                     height={'auto'} 
                 />
-                <Item item={ChairCarpet} position={8170} startOpacity={-15} className='chair-carpet' />
-                <Item item={ComputerChair} position={8180} />
-                <Item item={ComputerChairShadow} position={8180} startOpacity={-40} endOpacity={0.2}/>
-                <Item item={LightingStand} position={8290} startY={-3000} />
-                <Item item={LightingShadow} position={8290} endOpacity={0.3}/>
-                <Item item={LightRingStand} position={8280}/>
-                <Item item={LightRingStandShadow} position={8280} endOpacity={0.3}/>
-                <Item item={Table} position={8200} className={'table'}/>
-                <Item item={TableShadow} position={8200} endOpacity={0.3} zIndex={7}/>
-                <Item item={Tree} position={8200} startOpacity={-15}/>
-                <Item item={TreeShadow} position={8200} endOpacity={0.2}/>
-                <Item item={SofaChair} position={8180} />
-                <Item item={SofaChairShadow} position={8180} endOpacity={0.3} zIndex={7}/>
+                <Item item={ChairCarpet} position={startPosition + 160} startOpacity={-15} className='chair-carpet' />
+                <Item item={ComputerChair} position={startPosition + 170} />
+                <Item item={ComputerChairShadow} position={startPosition + 170} startOpacity={-40} endOpacity={0.2}/>
+                <Item item={LightingStand} position={startPosition + 280} startY={-3000} />
+                <Item item={LightingShadow} position={startPosition + 280} endOpacity={0.3}/>
+                <Item item={LightRingStand} position={startPosition + 270}/>
+                <Item item={LightRingStandShadow} position={startPosition + 270} endOpacity={0.3}/>
+                <Item item={Table} position={startPosition + 190} className={'table'}/>
+                <Item item={TableShadow} position={startPosition + 190} endOpacity={0.3} zIndex={7}/>
+                <Item item={Tree} position={startPosition + 190} startOpacity={-15}/>
+                <Item item={TreeShadow} position={startPosition + 190} endOpacity={0.2}/>
+                <Item item={SofaChair} position={startPosition + 170} />
+                <Item item={SofaChairShadow} position={startPosition + 170} endOpacity={0.3} zIndex={7}/>
             </div>
         </div>
     )
