@@ -55,12 +55,12 @@ export default function HeroSection({ isInView, offset = 1500 }) {
                     top: '100vh'
                 }}
             >
-                <img className='absolute img-map' src={MapImage} width={'80%'} height={'auto'} />
-                <img className='absolute img-camera' src={CameraImage} width={'30%'} height='auto' />
-                <img className='absolute img-pen' src={PenImage} width={'12%'} height='auto' />
-                <img className='absolute img-list-board' src={ListBoardImage} width={'12%'} height='auto' />
-                <img className='absolute img-compass' src={CompassImg} width={'9.5%'} height='auto' />
-                <img className='absolute img-ship' src={ShipImg} width={'9.5%'} height='auto' />
+                <img className='absolute img-map' src={MapImage} width={'80%'} height={'auto'} alt='camera'/>
+                <img className='absolute img-camera' src={CameraImage} width={'30%'} height='auto' alt='camera' style={{zIndex: scrollY > 5000 ? 0 : 9 }}/>
+                <img className='absolute img-pen' src={PenImage} width={'12%'} height='auto' alt='camera'/>
+                <img className='absolute img-list-board' src={ListBoardImage} width={'12%'} height='auto' alt='camera'/>
+                <img className='absolute img-compass' src={CompassImg} width={'9.5%'} height='auto' alt='camera'/>
+                <img className='absolute img-ship' src={ShipImg} width={'9.5%'} height='auto' alt='camera'/>
                 <motion.img
                     alt='Airplane'
                     className='absolute img-airplane'
