@@ -1,0 +1,72 @@
+#Contact-Us {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cu-text1 {
+    font-family: 'Sofia pro soft', sans-serif;
+    color: #d26066;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.cu-text2 {
+    font-family: 'Sofia pro soft', sans-serif;
+    color: #d26066;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.cu-text3 {
+    display: block;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Sofia pro soft', sans-serif;
+    color: #ad3c42;
+    font-size: 1.5em;
+    line-height: 3rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.workspace {
+    width: 100%;
+    max-width: 70%;
+    position: relative;
+}
+
+.base {
+    left: 0%;
+    top: 0%;
+}
+
+.item {
+    left: 0%;
+    top: 0%;
+}
+
+.chair-carpet {
+    left: -2%;
+    top: -2%;
+}
+
+.desk-shadow {
+    left: -2%;
+    top: -2%;
+}
+
+.table {
+    left: -16%;
+    top: -4%;
+    z-index: 8;
+}
+
+.system-unit-shadow {
+    left: -2%;
+    top: -3%
+}
